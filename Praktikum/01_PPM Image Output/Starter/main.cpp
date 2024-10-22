@@ -37,14 +37,14 @@ void printScreenToPPMFile(const pixel* screen, std::ofstream& ppmFile, const uns
 
 int main() {
 
-    struct pixel screen[width*height];
+    pixel screen[width*height];
 
     std::ofstream ppmFile("output.ppm");
 
 
     for(int i = 0; i < height; i++) {
         for(int j = 0; j < width; j++) {
-            setColor(screen, j, i, {255,0,0});
+            setColor(screen, j, i, {1,1,0});
         }
     }
     drawCircle(screen, 20,80,5, {0,1,0});
