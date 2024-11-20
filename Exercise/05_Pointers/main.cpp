@@ -1,46 +1,20 @@
 #include <iostream>
 //2
 
-struct Teacher{
-    std::string name;
-    bool isBooked = false;
-    void appointAppointment(){
-        if(isBooked){
-            std::cout << "I hate my Job." << std::endl;
-            isBooked = false;
-        } else{
-            std::cout << "It ain't much, but it's honest work." << std::endl;
-        }
-    }
-};
-
-struct Student{
-    std::string name;
-    Teacher& teacher;
-    void bookAppointment(){
-        if(!teacher.isBooked){
-            teacher.isBooked = true;
-            std::cout << "Successfully booked a meeting with the teacher." << std::endl;
-        } else{
-            std::cout << "Teacher is unavailable this week, maybe try again later";
-        }
-    }
-};
 
 //1a
 
 void increment(int* address_to_number){
-    (*address_to_number)++;
+
 }
 
 void increment(int& number){
-    number++;
 }
 
 //1b
 struct Element{
-    int value;
-    Element* next;
+
+
 };
 
 
