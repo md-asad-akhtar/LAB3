@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <__ranges/rend.h>
 
 #include "Camera.hpp"
 #include "Ray.hpp"
